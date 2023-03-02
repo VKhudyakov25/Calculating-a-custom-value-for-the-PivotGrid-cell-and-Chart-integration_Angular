@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+.dx-viewport {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.dx-field {
+  display: flex;
+}

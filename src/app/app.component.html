@@ -1,0 +1,20 @@
+<div class="dx-fieldset-header">SearchBox</div>
+<div class="dx-field">
+  <div class="dx-field-label">Product</div>
+  <div class="dx-field-value">
+    <dx-select-box
+      #selectBox
+      [dataSource]="productsDataSource"
+      displayExpr="Name"
+      valueExpr="id"
+      [searchEnabled]="true"
+      [searchMode]="searchModeOption"
+      [searchExpr]="searchExprOption"
+      [searchTimeout]="searchTimeoutOption"
+      [acceptCustomValue]="true"
+      (onCustomItemCreating)="addCustomItem($event)"
+    >
+      ></dx-select-box
+    >
+  </div>
+</div>
